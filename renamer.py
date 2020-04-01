@@ -10,6 +10,7 @@ for f in os.listdir():
 	f_name, f_ext = os.path.splitext(f)
 	if 'NEWTEXT_' in f_name:
         	print('already there')
+		#instead of print, you can also use pass
    	 else:
        	 	os.rename(f, 'NEWTEXT_' + f_name + f_ext)
 	#this if-else operation means if the file in the directory already has the 'NEWTEXT' in the filename 
